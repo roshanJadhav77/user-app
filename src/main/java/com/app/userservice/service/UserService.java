@@ -14,10 +14,10 @@ import org.springframework.web.client.RestTemplate;
 public class UserService {
 
     @Autowired
-    private UserRepository userRepository;
+    UserRepository userRepository;
 
     @Autowired
-    private RestTemplate restTemplate;
+    RestTemplate restTemplate;
 
     public User saveUser(User user) {
         log.info("inside saveUser method of UserService");

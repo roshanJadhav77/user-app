@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    UserService userService;
 
-    @PostMapping("/")
+    @PostMapping("/save")
     public User saveUser(@RequestBody User user) {
         log.info("inside saveUser method of UserController");
         return userService.saveUser(user);
